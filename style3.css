@@ -1,0 +1,48 @@
+.profil-section {
+    padding: 20px 30px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profil-section h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.profil-content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.profil-content .profil-image {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profil-content .profil-text {
+    flex: 1;
+    font-size: 16px;
+    color: #555;
+}
+
+.profil-content .profil-text h2 {
+    font-size: 22px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.profil-content .profil-text ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.profil-content .profil-text ul li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+}

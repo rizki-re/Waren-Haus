@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - Waren Haus</title>
+    <link rel="stylesheet" href="produk 1.css">
+</head>
+<body>
+<section class="product-details">
+    <div class="product-images">
+        <img src="one piece.jpeg" alt="Product Image 1">
+        <img src="one piece 2.jpeg" alt="Product Image 2">
+    </div>
+    <div class="product-info">
+        <h2>ACTION FIGURE ONE PIECE - Monkey D Luffy</h2>
+        <p>Deskripsi Produk:</p>
+        <ul>
+            <li><strong>Materials:</strong> ABS, PVC</li>
+            <li><strong>Scale & Dimensions:</strong> 1/8 H=170mm (6.63in, 1:1=1.36m)</li>
+        </ul>
+        <div class="product-price">Rp. 400.000</div>
+        <button id="payButton">Beli Sekarang</button>
+
+        <div class="payment-modal" id="paymentModal">
+            <div class="modal-content">
+                <h2>Pilih Metode Pembayaran</h2>
+            <form>
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" placeholder="Masukkan nama Anda">
+
+                <div class="row">
+                    <div class="column">
+                        <label for="phone">No. Telepon:</label>
+                        <input type="text" id="phone" placeholder="Masukkan nomor telepon">
+                    </div>
+                    <label for="alamat">Alamat:</label>
+                    <textarea id="alamat" rows="4" placeholder="Masukkan alamat lengkap Anda"></textarea>
+            </form>
+                <div class="payment-option">
+                    <h3>Transfer Bank</h3>
+            <tr>
+                <th><input type="checkbox" value=""><img src="bca.jpeg" width="40px" height="20px"></th>
+                <th><input type="checkbox" value=""><img src="bri.jpeg" width="40px" height="30px"></th>
+                <th><input type="checkbox" value=""><img src="mandiri.jpeg" width="40px" height="20px"></th>
+            </tr>
+                </div>
+                <div class="payment-option">
+                    <h3>Dompet Digital</h3>
+            <tr>
+                <th><input type="checkbox" value=""><img src="dana.jpeg" width="40px" height="20px"></th>
+                <th><input type="checkbox" value=""><img src="ovo.jpeg" width="40px" height="30px"></th>
+                <th><input type="checkbox" value=""><img src="visa.jpeg" width="40px" height="20px"></th>
+            </tr>
+                </div>
+                <button class="buy-btn" id="buyModal">Bayar</button>
+
+                <button class="close-btn" id="closeModal">Batal</button>
+            </div>
+        </div>
+    
+        <script>
+            const payButton = document.getElementById('payButton');
+            const paymentModal = document.getElementById('paymentModal');
+            const closeModal = document.getElementById('closeModal');
+    
+            payButton.addEventListener('click', () => {
+                paymentModal.style.display = 'flex';
+            });
+    
+            closeModal.addEventListener('click', () => {
+                paymentModal.style.display = 'none';
+            });
+        </script>
+</body>
+</html>
